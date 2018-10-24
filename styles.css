@@ -1,0 +1,21 @@
+* {
+    margin:0;
+}
+
+:root {
+    --color-dark: #181A27;
+    --color-main: #162BF4; 
+
+    --padding-vertical:104px;
+    --padding-horiz:133px;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height:120%;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    line-height:120%;
+}
