@@ -11,32 +11,104 @@
     color: var(--color-dark)
 }
 
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight:500;
+    line-height:38px;
+}
+
 h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     line-height:120%;
 }
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 42px;
-    font-weight:500;
-    line-height:120%;
+h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: normal;
+    font-size:22px;
 }
 
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+a {
+    font-family: 'Playfair Display', serif;
+    font-size:16px;
+    line-height:32px;
+    color: var(--color-main);
+    font-style:italic;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    background-position: 0 50%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    text-decoration: underline;
+    transition: 0.2s ease;
+}
+
+a:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='#162BF4' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 50%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+
 .Hero {
+    box-sizing: border-box;
     display:flex;
     flex-direction:column;
     align-items:center;
-    padding: 96px 0px var(--padding-vertical) 0px;
+    padding: 0px 16px 0px 16px;
+    margin: 96px 0px var(--padding-vertical) 0px;
     width:100%;
 }
 
 .Hero-content {
     width:100%;
-    max-width:1174px;
 }
 
 .Hero-content > h1 {
+    margin: 16px 0px;
     max-width:909px;
-    padding: 16px 0px;
+}
+
+.Articles, .Contact {
+    margin-top: var(--padding-vertical);
+}
+
+.Subcontainer {
+    padding: 0px 16px;
+}
+
+.Comp-container {
+    max-width: 100%;
+}
+
+.Comp-container > img {
+    max-width: 100%;
+    max-height:100%;
+}
+
+.Comp-title {
+    margin-top:16px;
+}
+
+.Comp-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height:32px;
+}
+
+.Comp:nth-child(2) {
+    margin-top:56px;
+}
+
+.Subcontainer .Comp {
+    margin-top:56px;
 }
