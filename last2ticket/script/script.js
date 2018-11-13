@@ -147,6 +147,25 @@ $(document).ready(function() {
 		dropContent.classList.remove('visible2');
 		body.classList.remove('lockScroll');
 	});
+
+	var scroll = new SmoothScroll('a[href*="#"]', {
+		speed: 90
+	});
+
+	window.onscroll = function() {
+		scrollFunction();
+	};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 1200 /*|| document.documentElement.scrollTop > 100*/) {
+			$('#BackTop').css('display', 'flex').fadeIn();
+			// document.getElementById('BackTop').style.display = 'block';
+		} else {
+			document.getElementById('BackTop').style.display = 'none';
+		}
+	}
+
+	console.log('Time until DOMready: ', Date.now() - timerStart);
 });
 
 const progressElement = document.querySelector('.progress-bar');

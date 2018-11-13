@@ -1,7 +1,8 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Araújo</title>
+    <title>João Araújo ~ Last2Ticket Case Study</title>
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="l2tstyle.css">
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|IBM+Plex+Serif:400,400i,700,700i" rel="stylesheet">
@@ -13,12 +14,6 @@
 </head>
 
 <body>
-    <!--
-        // Sub block inside the same theme, specially for Subtitles.
-        <div class="Block-sub-sub">
-                <h3 class="Case-title">Background</h3>
-        </div>
-    -->
     <div class="Topnav">
         <div class="Navigation">
             <a href="/" class="Logo-link">
@@ -34,7 +29,7 @@
             <div class="Navigation-content">
                 <a href="../#work" class="Dropdown-link">Work</a>
                 <a href="../#contact" class="Dropdown-link">Contact</a>
-                <a href="#" class="Dropdown-link">Resume</a>
+                <a href="../JoaoAraujo_Resume2018.pdf" target="_blank" class="Dropdown-link">Resume</a>
             </div>
         </div>
     </div>
@@ -49,7 +44,7 @@
             <div class="Dropdown-content">
                 <a href="../#work" class="Dropdown-link">Work</a>
                 <a href="../#contact" class="Dropdown-link">Contact</a>
-                <a href="#" class="Dropdown-link">Resume</a>
+                <a href="../JoaoAraujo_Resume2018.pdf" target="_blank" class="Dropdown-link">Resume</a>
             </div>
         </div>
     </div>
@@ -62,7 +57,7 @@
                 the widget on a partner’s website. </h1>
         </div>
     </div>
-    <div class="Block Block-settings">
+    <div class="Block Block-settings" id="top">
         <div class="Block-sub Block-sub-settings">
             <p><span style="font-weight: 700">Date:</span> April 2018</p>
             <p><span style="font-weight: 700">Client:</span> Last2Ticket</p>
@@ -75,7 +70,6 @@
 
     <!-- new bar for progress reading -->
     <!-- <div class="bar-long"></div> -->
-
     <div class="progress-bar"></div>
     <div class="Block Reading-block">
         <div class="Block-sub Reading-block-sub">
@@ -84,7 +78,6 @@
                 <button class="Reading-time" id="button2min">2 min</button>
                 <button class="Reading-time" id="button10min">10 min</button>
             </div> -->
-
             <form name="form2" id="formRead">
             <select name="jumpmenu" id="selectRead" onchange="getComboA(this)">
             <option value="tenmin.html">10 min</option>
@@ -109,6 +102,11 @@
             </div>
         </div>
     </div>
+    <a href="#top">
+        <div id="BackTop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ccc" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg>
+        </div>
+    </a>
 </body>
 <script>
     $(window).scroll(function () {
